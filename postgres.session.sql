@@ -1,0 +1,11 @@
+CREATE TABLE weather_data (
+    id SERIAL PRIMARY KEY,
+    city VARCHAR(255) NOT NULL,
+    state VARCHAR(255) NOT NULL,
+    country VARCHAR(255) NOT NULL,
+    main VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    icon VARCHAR(255) NOT NULL,
+    temperature FLOAT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
